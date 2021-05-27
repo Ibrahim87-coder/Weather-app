@@ -1,5 +1,5 @@
 const API_KEY='a1905c837f244963a9eefcc0053681d0';
-const BASE_URL ='http://api.openweathermap.org/data/2.5/weather';
+const BASE_URL ='https://api.openweathermap.org/data/2.5/weather';
 
 
 
@@ -36,7 +36,7 @@ updateWeather=(city)=>{
   cityName.textContent = city.name;
   const imgname = city.weather[0].icon;
   
-const iconSrc = `http://openweathermap.org/img/wn/${imgname}@2x.png`;
+const iconSrc = `https://openweathermap.org/img/wn/${imgname}@2x.png`;
   cardBody.innerHTML=`
   <div class="card-mid row">
   <div class="col-8 text-center temp">
